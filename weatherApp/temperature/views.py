@@ -4,7 +4,7 @@ from .models import City
 from .forms import CityForm
 # Create your views here.
 def home(request):
-    appid = 'ef9ef023d916868da8814fd5f8f3be9a'
+    appid = 'your_api_key' #the previous one has been deactivated
     url = 'http://api.openweathermap.org/data/2.5/weather?q={}&units=metric&appid=' + appid
 
     if request.method == "POST":
